@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy | HTWS</title>
+    <link rel="icon" href="assets/icon-128.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img src="assets/icon-128.png" alt="" />
+        <span>HTWS</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </header>
+    <main class="content">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: November 14, 2026</p>
+
+      <p>
+        Hibernate Tabs, Windows, and Sessions performs hibernation decisions
+        inside the browser. It does not operate a developer server, include
+        analytics or advertising, sell data, or transmit browsing data to the
+        developer.
+      </p>
+
+      <h2>Chrome Web Store Limited Use</h2>
+      <p>
+        The use of information received from Google APIs adheres to the Chrome
+        Web Store User Data Policy, including the Limited Use requirements. HTWS
+        uses browsing data only to provide its user-facing tab hibernation,
+        protection, activity-history, bookmark, and restore features. The
+        developer does not receive this data, allow humans to read it, use it
+        for advertising or credit decisions, or sell or transfer it to third
+        parties.
+      </p>
+
+      <h2>Data Used</h2>
+      <p>
+        The extension reads tab URLs, titles, window membership, pin and group
+        state, audio state, and limited browser-visible safety state. With
+        optional website access it records only yes-or-no signals for playing
+        media, Picture-in-Picture, active streams, and modified forms. It never
+        reads form values or page text.
+      </p>
+      <p>
+        Hibernation stores restoration metadata locally. Local extension storage
+        also keeps a bounded activity log containing operation time, outcome,
+        tab title, and URL. General protection preferences may be synced by
+        Chromium when browser profile sync is enabled; archive metadata and
+        activity history remain local.
+      </p>
+
+      <h2>Imports, Exports, And Bookmarks</h2>
+      <p>
+        Archive, activity, and Never-Hibernate site-rule exports are generated
+        locally as JSON files only when the user selects Export. Imports read a
+        user-selected JSON file locally, validate it, and merge accepted records
+        into extension storage. Neither operation sends the file to the
+        developer.
+      </p>
+      <p>
+        Browser bookmarks are created only when the user explicitly selects a
+        bookmark action. Those bookmarks remain ordinary browser bookmarks if
+        the extension is later removed.
+      </p>
+
+      <h2>Permissions</h2>
+      <ul>
+        <li>
+          <strong>Bookmarks:</strong> creates, reads, renames, and removes
+          real-URL bookmark copies only when the user selects a bookmark action.
+        </li>
+        <li>
+          <strong>Context menus:</strong> adds commands for hibernating a tab,
+          window, or session and for adding the current site to Never Hibernate.
+        </li>
+        <li>
+          <strong>Tabs:</strong> reads tab state and closes or restores the tabs
+          selected for hibernation.
+        </li>
+        <li>
+          <strong>Tab groups:</strong> records and reconstructs browser tab
+          groups during restore.
+        </li>
+        <li>
+          <strong>Storage:</strong> stores preferences, site rules, archive
+          metadata, page-safety signals, undo and redo history, and Activity
+          History.
+        </li>
+        <li>
+          <strong>Scripting and optional website access:</strong> observes only
+          boolean media, capture, Picture-in-Picture, and modified-form safety
+          signals when the user enables that protection.
+        </li>
+      </ul>
+      <p>
+        Ignore Protection applies only to the user-initiated window or session
+        action where it is selected. It does not make prohibited URL types
+        eligible and does not expand the data the extension reads or stores.
+      </p>
+
+      <h2>Private And Incognito Tabs</h2>
+      <p>
+        Incognito access is optional and must be enabled in the browser's
+        extension settings. Private tabs stay open by default. If the user
+        chooses local private archiving or Activity-only logging, the associated
+        titles and URLs are stored in extension storage that Chromium shares
+        with the regular profile. Private archive records restore into private
+        windows and cannot be copied into browser bookmarks by HTWS.
+      </p>
+
+      <h2>User Control</h2>
+      <p>
+        Users can clear activity history, permanently erase individual archive
+        entries or the entire local archive, remove saved browser bookmarks,
+        revoke optional website access, export their data, or remove the
+        extension. Removing the extension deletes its local storage; explicitly
+        created browser bookmarks remain until the user removes them.
+      </p>
+    </main>
+    <footer class="site-footer">
+      <span>Hibernate Tabs, Windows, and Sessions</span>
+      <a href="support.html">Support</a>
+    </footer>
+  </body>
+</html>
