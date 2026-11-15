@@ -24,64 +24,54 @@
     </header>
     <main>
       <section class="hero">
-        <div>
-          <p class="eyebrow">Built to reduce browser memory pressure</p>
-          <h1>Close tabs. Free memory. Restore everything later.</h1>
+        <div class="hero-copy">
+          <p class="eyebrow">Memory relief without losing your place</p>
+          <h1>Close the tabs. Keep the session.</h1>
           <p class="lead">
-            Browser tab suspension did not reduce memory reliably enough for the
-            workflow HTWS was built to solve. HTWS takes a direct approach: it
-            saves a complete local restore record, then closes one tab, a whole
-            window, or an entire session so Chromium can reclaim the live page's
-            resources. Restore the order, pins, groups, and names when you need
-            them again.
+            HTWS records every restorable detail locally, then closes your tabs
+            so Brave or Chrome can release their live page resources. Restore a
+            tab, a window, or your full workspace when you are ready.
+          </p>
+          <p class="memory-note">
+            <strong>Why it saves memory:</strong> suspended tabs can leave
+            browser processes and page resources behind. HTWS closes the live
+            tabs after saving them.
           </p>
         </div>
-        <div class="hero-mark" aria-hidden="true">
-          <img src="assets/icon-128.png" alt="" />
-        </div>
+        <figure class="hero-visual">
+          <img
+            src="assets/htws-memory-relief-hero.png"
+            alt="Open browser tabs flowing into a compact sleeping archive"
+            width="1448"
+            height="1086"
+            fetchpriority="high"
+          />
+          <figcaption>
+            Your workspace stays recoverable while the live tabs get out of the
+            way.
+          </figcaption>
+        </figure>
       </section>
       <section class="feature-band" aria-label="Product highlights">
         <div class="feature">
-          <strong>Memory saving through closure</strong>
+          <span class="feature-kicker">01</span>
+          <strong>Save first, then close</strong>
           <p>
-            Hibernated tabs are closed, not merely suspended, reducing browser
-            memory pressure without losing their restore details.
+            Hibernation stores the restore record before the live tab is closed.
           </p>
         </div>
         <div class="feature">
-          <strong>Complete structure preserved</strong>
+          <span class="feature-kicker">02</span>
+          <strong>Return to the same structure</strong>
           <p>
             Restore tabs, windows, sessions, groups, pins, and active state.
           </p>
         </div>
         <div class="feature">
-          <strong>Local and under your control</strong>
+          <span class="feature-kicker">03</span>
+          <strong>Keep the record local</strong>
           <p>
-            Records stay in extension storage, and protection rules keep
-            important, active, or excluded tabs open.
-          </p>
-        </div>
-      </section>
-      <section class="evidence" aria-labelledby="evidence-title">
-        <div>
-          <p class="eyebrow">Measured against native tab discard</p>
-          <h2 id="evidence-title">
-            HTWS released 11.7 to 13.2 times more working memory.
-          </h2>
-        </div>
-        <div class="evidence-copy">
-          <p>
-            In 24 fresh-profile Brave runs on Windows 10, HTWS released
-            substantially more process working set than Chromium's native tab
-            discard across workloads from 10 to 100 tabs. Closing hibernated
-            tabs also allowed their renderer processes to exit.
-          </p>
-          <a href="assets/HTWS-memory-savings-benchmark.pdf">
-            Read the complete benchmark report
-          </a>
-          <p class="evidence-note">
-            Controlled synthetic workload. Actual savings vary by website,
-            browser version, system, and time after hibernation.
+            No account or analytics. Protection rules keep excluded tabs open.
           </p>
         </div>
       </section>
