@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Hibernate tabs, windows, and complete browsing sessions, then restore their structure when you are ready."
+      content="Free browser memory by saving complete local restore records and closing tabs, windows, or entire browsing sessions until you need them again."
     />
     <title>Hibernate Tabs, Windows, and Sessions</title>
     <link rel="icon" href="assets/icon-128.png" />
@@ -25,12 +25,15 @@
     <main>
       <section class="hero">
         <div>
-          <p class="eyebrow">A local archive for your browser</p>
-          <h1>Put tabs away. Keep their structure.</h1>
+          <p class="eyebrow">Built to reduce browser memory pressure</p>
+          <h1>Close tabs. Free memory. Restore everything later.</h1>
           <p class="lead">
-            Hibernate one tab, a complete window, or an entire browsing session.
-            HTWS records the restore details locally before closing anything, so
-            your order, pins, groups, and names are ready later.
+            Browser tab suspension did not reduce memory reliably enough for the
+            workflow HTWS was built to solve. HTWS takes a direct approach: it
+            saves a complete local restore record, then closes one tab, a whole
+            window, or an entire session so Chromium can reclaim the live page's
+            resources. Restore the order, pins, groups, and names when you need
+            them again.
           </p>
         </div>
         <div class="hero-mark" aria-hidden="true">
@@ -39,18 +42,47 @@
       </section>
       <section class="feature-band" aria-label="Product highlights">
         <div class="feature">
-          <strong>Local by design</strong>
-          <p>Archive records and activity history stay in extension storage.</p>
+          <strong>Memory saving through closure</strong>
+          <p>
+            Hibernated tabs are closed, not merely suspended, reducing browser
+            memory pressure without losing their restore details.
+          </p>
         </div>
         <div class="feature">
-          <strong>Structure preserved</strong>
+          <strong>Complete structure preserved</strong>
           <p>
             Restore tabs, windows, sessions, groups, pins, and active state.
           </p>
         </div>
         <div class="feature">
-          <strong>You choose what rests</strong>
-          <p>Protection rules keep important, active, or excluded tabs open.</p>
+          <strong>Local and under your control</strong>
+          <p>
+            Records stay in extension storage, and protection rules keep
+            important, active, or excluded tabs open.
+          </p>
+        </div>
+      </section>
+      <section class="evidence" aria-labelledby="evidence-title">
+        <div>
+          <p class="eyebrow">Measured against native tab discard</p>
+          <h2 id="evidence-title">
+            HTWS released 11.7 to 13.2 times more working memory.
+          </h2>
+        </div>
+        <div class="evidence-copy">
+          <p>
+            In 24 fresh-profile Brave runs on Windows 10, HTWS released
+            substantially more process working set than Chromium's native tab
+            discard across workloads from 10 to 100 tabs. Closing hibernated
+            tabs also allowed their renderer processes to exit.
+          </p>
+          <a href="assets/HTWS-memory-savings-benchmark.pdf">
+            Read the complete benchmark report
+          </a>
+          <p class="evidence-note">
+            Controlled synthetic workload. Actual savings vary by website,
+            browser version, system, and time after hibernation.
+          </p>
         </div>
       </section>
     </main>
