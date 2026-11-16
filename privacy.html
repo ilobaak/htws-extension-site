@@ -42,11 +42,11 @@
 
       <h2>Data Used</h2>
       <p>
-        The extension reads tab URLs, titles, window membership, pin and group
-        state, audio state, and limited browser-visible safety state. With
-        optional website access it records only yes-or-no signals for playing
-        media, Picture-in-Picture, active streams, and modified forms. It never
-        reads form values or page text.
+        The extension reads tab URLs, titles, window membership, last-active
+        time, pin and group state, audio state, and limited browser-visible
+        safety state. With optional website access it records only yes-or-no
+        signals for playing media, Picture-in-Picture, active streams, and
+        modified forms. It never reads form values or page text.
       </p>
       <p>
         Hibernation stores restoration metadata locally. Local extension storage
@@ -54,6 +54,12 @@
         tab title, and URL. General protection preferences may be synced by
         Chromium when browser profile sync is enabled; archive metadata and
         activity history remain local.
+      </p>
+      <p>
+        Automatic hibernation keeps per-tab last-active timestamps in temporary
+        extension session storage. These timestamps are used only to identify
+        tabs that have reached the selected inactivity delay and are cleared
+        when the browser session ends.
       </p>
 
       <h2>Imports, Exports, And Bookmarks</h2>
@@ -73,6 +79,11 @@
       <h2>Permissions</h2>
       <ul>
         <li>
+          <strong>Alarms:</strong> wakes the extension periodically to check for
+          inactive tabs that have reached the selected automatic hibernation
+          delay.
+        </li>
+        <li>
           <strong>Bookmarks:</strong> creates, reads, renames, and removes
           real-URL bookmark copies only when the user selects a bookmark action.
         </li>
@@ -81,8 +92,8 @@
           window, or session and for adding the current site to Never Hibernate.
         </li>
         <li>
-          <strong>Tabs:</strong> reads tab state and closes or restores the tabs
-          selected for hibernation.
+          <strong>Tabs:</strong> reads tab state and closes explicitly or
+          automatically hibernated tabs, then recreates restored tabs.
         </li>
         <li>
           <strong>Tab groups:</strong> records and reconstructs browser tab
