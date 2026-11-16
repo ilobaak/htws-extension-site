@@ -135,11 +135,11 @@ h2 {
 
 .hero-visual figcaption {
   max-width: none;
-  margin: 14px 8px 0 auto;
+  margin: 14px auto 0;
   color: var(--muted);
   font-size: 0.85rem;
   line-height: 1.5;
-  text-align: right;
+  text-align: center;
 }
 
 .feature-band {
@@ -235,11 +235,6 @@ h2 {
 
   .hero-copy {
     padding-block: 0;
-  }
-
-  .hero-visual figcaption {
-    margin-inline: 4px;
-    text-align: left;
   }
 
   .hero-visual img {
