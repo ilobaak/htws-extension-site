@@ -1,0 +1,21 @@
+# Operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors
+.idea/
+.vscode/
+
+# Local tooling — do not commit
+.Codex/
+.Codex-no-auto
+AGENTS.md
+.anthropic/
+.cursor/
+.cursorrules
+.aider*
+.continue/
+.copilot/
+.windsurf/
+.codeium/
